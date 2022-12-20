@@ -64,7 +64,34 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 Для того, чтобы увидеть разницу между текущим файлом и закоммиченным файлом, нужно использовать команду `git diff`.
+### 6. Просмотр истории коммитов 
+Для просмотра истории записанных коммитов используется командв - `git log`.
 
+Пример запроса:
+```
+git log
+commit 74125b6f760464f18cd821234869df79e6a6bcf1 (HEAD -> master)
+Author: Dmitrii Smirnov <dvsmirnov@t1-consulting.ru>
+Date:   Tue Dec 20 09:16:03 2022 +0300
+
+    Добавили изменения в раздел 5
+
+commit 5e1e5a2ecaf0cf2049ece4dc7f1e8b65d9b3361b
+Author: Dmitrii Smirnov <dvsmirnov@t1-consulting.ru>
+Date:   Mon Dec 19 17:55:52 2022 +0300
+
+    Добавили раздел 5 - Запись изменений в репозиторий
+```
+Для более компактного отображения данных, можно использовать команду `git log --oneline`.
+
+Пример запроса:
+```
+git log --oneline
+74125b6 (HEAD -> master) Добавили изменения в раздел 5
+5e1e5a2 Добавили раздел 5 - Запись изменений в репозиторий
+7dd2adc Добавили описания раздела 4
+bfc0235 Добавили подзаголовок 4 - Инициализация репозитория
+```
 
 
 
